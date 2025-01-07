@@ -1,0 +1,201 @@
+/* 整體背景樣式 */
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* 背景圖片樣式 */
+.background-image {
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* 上方新增圖片樣式 */
+.top-image img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* 固定選單樣式 */
+.fixed-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(166, 202, 214, 0.7);
+    z-index: 10;
+    padding: 1rem 0;
+}
+
+.fixed-navbar nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.fixed-navbar nav ul li {
+    margin: 0 1.5rem;
+}
+
+.fixed-navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.fixed-navbar nav ul li a:hover {
+    color: #7b8aff;
+}
+
+/* 內容框樣式 */
+#main-content {
+    max-width: 700px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(172, 169, 215, 0.1);
+    text-align: center;
+}
+
+/* 自我介紹標題樣式 */
+.intro h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 自我介紹內容樣式 */
+.intro p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* 調整 Facebook 連結樣式 */
+.social-link a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.social-link a:hover {
+    color: #0056b3;
+}
+
+/* 響應式設計 */
+
+/* 在中等大小設備上（<=1024px），調整內容布局 */
+@media (max-width: 1024px) {
+    /* 固定選單樣式 */
+    .fixed-navbar nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .fixed-navbar nav ul li {
+        margin: 10px 0;
+    }
+
+    /* 背景區域調整 */
+    .background-image {
+        padding: 30px;
+    }
+
+    /* 內容區域調整 */
+    #main-content {
+        padding: 25px;
+    }
+
+    .intro h2 {
+        font-size: 24px;
+    }
+
+    .intro p {
+        font-size: 16px;
+    }
+}
+
+/* 在小型設備上（<=768px），進一步調整 */
+@media (max-width: 768px) {
+    /* 背景區域調整 */
+    .background-image {
+        padding: 20px;
+    }
+
+    /* 內容區域調整 */
+    #main-content {
+        padding: 20px;
+    }
+
+    .intro h2 {
+        font-size: 22px;
+    }
+
+    .intro p {
+        font-size: 15px;
+    }
+
+    /* 圖片樣式 */
+    .top-image img {
+        max-height: 400px;
+    }
+
+    /* Facebook 連結樣式 */
+    .social-link a {
+        font-size: 14px;
+    }
+}
+
+/* 在超小型設備上（<=480px），進一步調整 */
+@media (max-width: 480px) {
+    /* 固定選單樣式 */
+    .fixed-navbar nav ul {
+        flex-direction: column;
+        padding: 8px 0;
+    }
+
+    .fixed-navbar nav ul li {
+        margin: 5px 0;
+    }
+
+    /* 背景區域調整 */
+    .background-image {
+        padding: 15px;
+    }
+
+    /* 內容區域調整 */
+    #main-content {
+        padding: 15px;
+    }
+
+    .intro h2 {
+        font-size: 20px;
+    }
+
+    .intro p {
+        font-size: 14px;
+    }
+
+    .top-image img {
+        max-height: 300px;
+    }
+
+    /* Facebook 連結樣式 */
+    .social-link a {
+        font-size: 12px;
+    }
+}
